@@ -13,8 +13,9 @@ pipeline {
         
         stage('Git Clone') {
             steps {
-                // Get some code from a GitHub repository
-               git 'https://github.com/Saranyadenuva/Apache.git'
+                // Get some code from a GitHub repositor
+                git branch: 'main',
+               url: 'https://github.com/Saranyadenuva/Apache.git'
             }
 
         }
