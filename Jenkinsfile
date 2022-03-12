@@ -1,6 +1,7 @@
 pipeline {
     
-    agent any
+    agent { label 'main' }
+
 
     tools {
     jdk 'Java'
@@ -13,7 +14,7 @@ pipeline {
         stage('Git Clone') {
             steps {
                 // Get some code from a GitHub repository
-               git 'https://github.com/Saranyadenuva/Apache.git'
+               git 'https://github.com/chinni4321/apache2.git'
             }
 
         }
